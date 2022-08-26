@@ -1,10 +1,11 @@
+from modules import invite
 import os, platform, time
 my_os = platform.system()
 
 #Variables
-nitro = "https://discordapp.com/api/v9/entitlements/gift-codes/"
-invite = "https://discord.com/api/v9/invites/"
-lookup = "https://lookupguru.herokuapp.com/lookup"
+apiNitro = "https://discordapp.com/api/v9/entitlements/gift-codes/"
+apiInvite = "https://discord.com/api/v9/invites/"
+apiLookup = "https://lookupguru.herokuapp.com/lookup"
 
 #Function for clean terminal
 def cl():
@@ -40,6 +41,9 @@ def start():
     match choice:
         case '0':
             end()
+        case '1':
+            print(invite.infos(apiInvite))
+            loop(invite.infos, apiInvite)
         
 
 #Banner
