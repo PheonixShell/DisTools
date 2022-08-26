@@ -1,6 +1,11 @@
 import os, platform, time
 my_os = platform.system()
 
+#Variables
+nitro = "https://discordapp.com/api/v9/entitlements/gift-codes/"
+invite = "https://discord.com/api/v9/invites/"
+lookup = "https://lookupguru.herokuapp.com/lookup"
+
 #Function for clean terminal
 def cl():
     if my_os == 'Windows':
