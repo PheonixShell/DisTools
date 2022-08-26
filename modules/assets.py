@@ -1,4 +1,4 @@
-from modules import invite, nitro
+from modules import invite, nitro, user
 import os, platform, time
 my_os = platform.system()
 
@@ -47,6 +47,9 @@ def start():
         case '2':
             print(nitro.infos(apiNitro))
             loop(nitro.infos, apiNitro)
+        case '3':
+            print(user.infos(apiLookup))
+            loop(user.infos, apiLookup)
 
 #Banner
 banner = f'''
@@ -67,6 +70,7 @@ menu = f'''
 [>] Infos:
 [1] Invite
 [2] Nitro
+[3] UserID
 
 [0] Exit
 '''
