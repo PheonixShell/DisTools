@@ -11,7 +11,7 @@ def cl():
 #Function to close DisTools
 def end():
     print('Exit of DisTools...')
-    time.sleep(3)
+    time.sleep(1)
     cl()
     return
 
@@ -29,7 +29,7 @@ def loop(x, y):
 #Function to select module
 def start():
     cl()
-    print(f'{banner}\n{menu}')
+    print(f'{banner}{menu}')
     print(f'[>]', end=''); choice = str(input(' '))
 
     match choice:
