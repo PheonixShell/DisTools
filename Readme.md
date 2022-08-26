@@ -8,7 +8,7 @@ DisTools is a lot of tools for Discord users and Discord bot developers.
 
 ## Installation
 
-Python 3.10 and later required.
+Python 3.10 or later required.
 
 ```bash
   git clone https://github.com/PheonixShell/DisTools.git
