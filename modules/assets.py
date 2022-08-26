@@ -16,14 +16,14 @@ def cl():
 
 #Function to close DisTools
 def end():
-    print('Exit of DisTools...')
+    print('\n[>] Exit of DisTools...')
     time.sleep(1)
     cl()
     return
 
 #Menu function to choice restart, return main menu or quit after running a module
 def loop(x, y):
-    print(f'[1] Main Menu - [2] Restart - [3] Exit', end=' \n'); choice = str(input('[>] '))
+    print(f'\n[1] Main Menu - [2] Restart - [3] Exit', end=' \n'); choice = str(input('[>] '))
     match choice:
         case '1':
             start()
