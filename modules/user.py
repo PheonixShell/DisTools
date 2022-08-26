@@ -4,7 +4,7 @@ clear = lambda: assets.cl()
 
 def infos(api):
     clear()
-    print(banner.ban)
+    print(assets.banner)
     print(f'[>] User ID', end=''); uid = str(input(': '))
     clear()
     
